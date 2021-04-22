@@ -5,7 +5,7 @@ image_resource:
   type: docker-image
   source:
     repository: openjdk
-    tag: 11-jre-slim
+    tag: 11-jdk-slim
 
 inputs:
   - name: app-source
