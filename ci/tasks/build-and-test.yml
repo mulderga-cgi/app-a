@@ -1,0 +1,15 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: openjdk
+    tag: 11-jre-slim
+
+inputs:
+  - name: app-source
+  - name: app-ci-source
+
+run:
+  path: app-ci-source/ci/scripts/build-and-test.sh
